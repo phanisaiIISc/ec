@@ -21,10 +21,10 @@ traffic = uniform
 injection_rate = 0.1
 
 # Custom neuron and PE mapping
-mapping_function = custom_mapping
+mapping_function = custom
 
 # Custom mapping details (example for a simple case)
-custom_mapping_file = dnn_custom_mapping.txt
+#custom_mapping_file = dnn_custom_mapping.txt
 
 # Simulation parameters
 warmup_periods = 3
