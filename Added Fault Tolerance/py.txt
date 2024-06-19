@@ -1,0 +1,41 @@
+def generate_fault_tolerant_mapping(neurons_per_layer, pe_capacity=4, mesh_width=4):
+    mapping = []
+    pe_id = 0
+
+    for layer_id, neurons in enumerate(neurons_per_layer):
+        neuron_id = 0
+        row_base_pe_id = (layer_id % mesh_width) * mesh_width
+
+        # Cluster neurons into groups that fit into PEs and place them in rows sequentially
+        while neuron_id < neurons:
+            neurons_in_pe = min(pe_capacity, neurons - neuron_id)
+            current_pe_id = row_base_pe_id + (pe_id % mesh_width)
+            
+            if neurons_in_pe == pe_capacity:
+                mapping.append(f"PE_{current_pe_id}: Layer_{layer_id}_Neurons_{neuron_id + 1}_{neuron_id +            neurons_in_pe} (Whole-work)")
+            else:
+                mapping.append(f"PE_{current_pe_id}: Layer_{layer_id}_Neurons_{neuron_id + 1}_{neuron_id + neurons_in_pe} (Partially-work)")
+
+            # Add redundancy for fault tolerance
+            redundant_pe_id = (current_pe_id + 1) % (mesh_width * mesh_width)
+            mapping.append(f"PE_{redundant_pe_id}: Layer_{layer_id}_Neurons_{neuron_id + 1}_{neuron_id + neurons_in_pe} (Redundant)")
+
+            neuron_id += neurons_in_pe
+            pe_id += 1
+
+        # Fill remaining PEs in the row as unworking
+        while (pe_id % mesh_width) != 0:
+            current_pe_id = row_base_pe_id + (pe_id % mesh_width)
+            mapping.append(f"PE_{current_pe_id}: Layer_{layer_id}_Neurons_None (Unworking)")
+            pe_id += 1
+
+    return mapping
+
+# Example usage
+neurons_per_layer = [10, 8, 12, 16]  # Example neuron counts for each layer
+mapping = generate_fault_tolerant_mapping(neurons_per_layer)
+
+with open("dnn_custom_mapping_fault_tolerant.txt", "w") as f:
+    for line in mapping:
+        f.write(line + "\n")
+

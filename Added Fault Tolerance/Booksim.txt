@@ -1,0 +1,44 @@
+#########################################################
+# BookSim Configuration File for Fault-Tolerant DNN NoC Architecture
+#########################################################
+
+# Network topology
+topology = mesh
+k = 4                       # Mesh dimension (e.g., 4x4 mesh, modify based on your network size)
+n = 2                       # Number of dimensions in the mesh
+
+# Routing algorithm
+routing_function = dim_order
+
+# Virtual channels
+num_vcs = 2
+vc_buf_size = 8
+
+# Traffic pattern (example pattern, modify as needed)
+traffic = uniform
+
+# Injection rate
+injection_rate = 0.1
+
+# Custom neuron and PE mapping
+mapping_function = custom_mapping
+
+# Custom mapping details
+custom_mapping_file = dnn_custom_mapping_fault_tolerant.txt
+
+# Simulation parameters
+warmup_periods = 3
+sample_period = 1000
+max_samples = 10
+sim_power = 0
+
+# Specify the flit size (bits)
+flit_size = 128
+
+# Fault tolerance settings
+link_failures = 1               # Enable link failures
+fault_injection_rate = 0.01     # Rate of fault injection
+
+#########################################################
+# End of Configuration File
+#########################################################
