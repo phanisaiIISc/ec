@@ -1,0 +1,8 @@
+python run_booksim_mesh_energy.py lenet_256_quant_8_mesh_schedules/; cp -r logs/ results_lenet_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py nin_256_quant_8_mesh_schedules/; cp -r logs/ results_nin_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py resnet_256_quant_8_mesh_schedules/; cp -r logs/ results_resnet_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py squeeze_256_quant_8_mesh_schedules/; cp -r logs/ results_squeeze_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py vggnet_256_quant_8_mesh_schedules/; cp -r logs/ results_vggnet_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py vgg16_256_quant_8_mesh_schedules/; cp -r logs/ results_vgg16_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py resnet152_256_quant_8_mesh_schedules/; cp -r logs/ results_resnet152_256_quant_8_mesh_default/; rm -rf logs/
+python run_booksim_mesh_energy.py densenet_256_quant_8_mesh_schedules/; cp -r logs/ results_densenet_256_quant_8_mesh_default/; rm -rf logs/

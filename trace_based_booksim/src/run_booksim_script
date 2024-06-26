@@ -1,0 +1,91 @@
+#python run_booksim_mesh_default.py lenet_256_mesh_schedules/; mv logs/ results_lenet_256_mesh_default/
+#python run_booksim_mesh_default.py nin_256_mesh_schedules/; mv logs/ results_nin_256_mesh_default/
+#python run_booksim_mesh_default.py resnet_256_mesh_schedules/; mv logs/ results_resnet_256_mesh_default/
+#python run_booksim_mesh_default.py squeeze_256_mesh_schedules/; mv logs/ results_squeeze_256_mesh_default/
+#python run_booksim_mesh_default.py vggnet_256_mesh_schedules/; mv logs/ results_vggnet_256_mesh_default/
+#python run_booksim_mesh_default.py vgg16_256_mesh_schedules/; mv logs/ results_vgg16_256_mesh_default/
+#python run_booksim_mesh_default.py resnet152_256_mesh_schedules/; mv logs/ results_resnet152_256_mesh_default/
+#python run_booksim_mesh_default.py densenet_256_mesh_schedules/; mv logs/ results_densenet_256_mesh_default/
+
+
+
+#python run_booksim_mesh_default.py lenet_256_mesh_schedules_optim_router/; mv logs/ results_lenet_256_mesh_optim_router/
+#python run_booksim_mesh_default.py nin_256_mesh_schedules_optim_router/; mv logs/ results_nin_256_mesh_optim_router/
+#python run_booksim_mesh_default.py resnet_256_mesh_schedules_optim_router/; mv logs/ results_resnet_256_mesh_optim_router/
+#3python run_booksim_mesh_default.py squeeze_256_mesh_schedules_optim_router/; mv logs/ results_squeeze_256_mesh_optim_router/
+#python run_booksim_mesh_default.py vggnet_256_mesh_schedules_optim_router/; mv logs/ results_vggnet_256_mesh_optim_router/
+#python run_booksim_mesh_default.py vgg16_256_mesh_schedules_optim_router/; mv logs/ results_vgg16_256_mesh_optim_router/
+#python run_booksim_mesh_default.py resnet152_256_mesh_schedules_optim_router/; mv logs/ results_resnet152_256_mesh_optim_router/
+#python run_booksim_mesh_default.py densenet_256_mesh_schedules_optim_router/; mv logs/ results_densenet_256_mesh_optim_router/
+
+#python run_booksim_mesh_default.py lenet_256_quant_16_mesh_schedules/; mv logs/ results_lenet_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py nin_256_quant_16_mesh_schedules/; mv logs/ results_nin_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py resnet_256_quant_16_mesh_schedules/; mv logs/ results_resnet_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py squeeze_256_quant_16_mesh_schedules/; mv logs/ results_squeeze_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py vggnet_256_quant_16_mesh_schedules/; mv logs/ results_vggnet_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py vgg16_256_quant_16_mesh_schedules/; mv logs/ results_vgg16_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py resnet152_256_quant_16_mesh_schedules/; mv logs/ results_resnet152_256_quant_16_mesh_default/
+##
+#python run_booksim_mesh_default.py lenet_256_quant_8_mesh_schedules/; mv logs/ results_lenet_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py nin_256_quant_8_mesh_schedules/; mv logs/ results_nin_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py resnet_256_quant_8_mesh_schedules/; mv logs/ results_resnet_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py squeeze_256_quant_8_mesh_schedules/; mv logs/ results_squeeze_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py vggnet_256_quant_8_mesh_schedules/; mv logs/ results_vggnet_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py vgg16_256_quant_8_mesh_schedules/; mv logs/ results_vgg16_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py resnet152_256_quant_8_mesh_schedules/; mv logs/ results_resnet152_256_quant_8_mesh_default/
+##
+#python run_booksim_mesh_default.py lenet_256_quant_4_mesh_schedules/; mv logs/ results_lenet_256_quant_4_mesh_default/
+#python run_booksim_mesh_default.py nin_256_quant_4_mesh_schedules/; mv logs/ results_nin_256_quant_4_mesh_default/
+#python run_booksim_mesh_default.py resnet_256_quant_4_mesh_schedules/; mv logs/ results_resnet_256_quant_4_mesh_default/
+#python run_booksim_mesh_default.py squeeze_256_quant_4_mesh_schedules/; mv logs/ results_squeeze_256_quant_4_mesh_default/
+#python run_booksim_mesh_default.py vggnet_256_quant_4_mesh_schedules/; mv logs/ results_vggnet_256_quant_4_mesh_default/
+#python run_booksim_mesh_default.py vgg16_256_quant_4_mesh_schedules/; mv logs/ results_vgg16_256_quant_4_mesh_default/
+#python run_booksim_mesh_default.py resnet152_256_quant_4_mesh_schedules/; mv logs/ results_resnet152_256_quant_4_mesh_default/
+#
+#python run_booksim_mesh_default.py densenet_256_quant_16_mesh_schedules/; mv logs/ results_densenet_256_quant_16_mesh_default/
+#python run_booksim_mesh_default.py densenet_256_quant_8_mesh_schedules/; mv logs/ results_densenet_256_quant_8_mesh_default/
+#python run_booksim_mesh_default.py densenet_256_quant_4_mesh_schedules/; mv logs/ results_densenet_256_quant_4_mesh_default/
+#
+#python run_booksim_mesh_default.py lenet_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_lenet_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py nin_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_nin_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py resnet_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_resnet_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py squeeze_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_squeeze_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py vggnet_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_vggnet_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py vgg16_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_vgg16_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py resnet152_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_resnet152_256_quant_16_mesh_default_optim_router/
+##
+#python run_booksim_mesh_default.py lenet_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_lenet_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py nin_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_nin_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py resnet_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_resnet_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py squeeze_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_squeeze_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py vggnet_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_vggnet_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py vgg16_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_vgg16_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py resnet152_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_resnet152_256_quant_8_mesh_default_optim_router/
+##
+#python run_booksim_mesh_default.py lenet_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_lenet_256_quant_4_mesh_default_optim_router/
+#python run_booksim_mesh_default.py nin_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_nin_256_quant_4_mesh_default_optim_router/
+#python run_booksim_mesh_default.py resnet_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_resnet_256_quant_4_mesh_default_optim_router/
+#python run_booksim_mesh_default.py squeeze_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_squeeze_256_quant_4_mesh_default_optim_router/
+#python run_booksim_mesh_default.py vggnet_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_vggnet_256_quant_4_mesh_default_optim_router/
+#python run_booksim_mesh_default.py vgg16_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_vgg16_256_quant_4_mesh_default_optim_router/
+#python run_booksim_mesh_default.py resnet152_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_resnet152_256_quant_4_mesh_default_optim_router/
+#
+#python run_booksim_mesh_default.py densenet_256_quant_16_mesh_schedules_optim_router/; mv logs/ results_densenet_256_quant_16_mesh_default_optim_router/
+#python run_booksim_mesh_default.py densenet_256_quant_8_mesh_schedules_optim_router/; mv logs/ results_densenet_256_quant_8_mesh_default_optim_router/
+#python run_booksim_mesh_default.py densenet_256_quant_4_mesh_schedules_optim_router/; mv logs/ results_densenet_256_quant_4_mesh_default_optim_router/
+
+python run_booksim_mesh_default.py lenet_64_quant_8_mesh_schedules/; mv logs/ results_lenet_64_quant_8_mesh_default/
+python run_booksim_mesh_default.py nin_64_quant_8_mesh_schedules/; mv logs/ results_nin_64_quant_8_mesh_default/
+python run_booksim_mesh_default.py resnet_64_quant_8_mesh_schedules/; mv logs/ results_resnet_64_quant_8_mesh_default/
+python run_booksim_mesh_default.py squeeze_64_quant_8_mesh_schedules/; mv logs/ results_squeeze_64_quant_8_mesh_default/
+#python run_booksim_mesh_default.py vggnet_64_quant_16_mesh_schedules/; mv logs/ results_vggnet_64_quant_16_mesh_default/
+#python run_booksim_mesh_default.py vgg16_64_quant_16_mesh_schedules/; mv logs/ results_vgg16_64_quant_16_mesh_default/
+#python run_booksim_mesh_default.py resnet152_64_quant_16_mesh_schedules/; mv logs/ results_resnet152_64_quant_16_mesh_default/
+##
+python run_booksim_mesh_default.py lenet_128_quant_8_mesh_schedules/; mv logs/ results_lenet_128_quant_8_mesh_default/
+python run_booksim_mesh_default.py nin_128_quant_8_mesh_schedules/; mv logs/ results_nin_128_quant_8_mesh_default/
+python run_booksim_mesh_default.py resnet_128_quant_8_mesh_schedules/; mv logs/ results_resnet_128_quant_8_mesh_default/
+python run_booksim_mesh_default.py squeeze_128_quant_8_mesh_schedules/; mv logs/ results_squeeze_128_quant_8_mesh_default/
+
+python run_booksim_mesh_default.py densenet_64_quant_8_mesh_schedules/; mv logs/ results_densenet_64_quant_8_mesh_default/
+python run_booksim_mesh_default.py densenet_128_quant_8_mesh_schedules/; mv logs/ results_densenet_128_quant_8_mesh_default/
